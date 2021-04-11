@@ -32,11 +32,10 @@ body{
   color: hsl(0, 0%, 95%);
 }
 .container {
-  display: flex;
+  
   background-color: hsl(0, 0%, 95%);
   box-shadow: 10px 10px 8px #888888;
-  height: 500px;
-  width: 1200px;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
 }
@@ -87,45 +86,8 @@ button:hover {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .container{
         display: flex;
-        flex-direction:column;
-        height: 100vh;
+        flex-direction:row;
     }
-    .container div{
-        
-    }
-    .box-1 {
-  border-radius: 5px 0px 0px 5px;
-  background-color: hsl(31, 77%, 52%);
-}
-.box-2 {
-  background-color: hsl(184, 100%, 22%);
-}
-.box-3 {
-  border-radius: 0px 5px 5px 0px;
-  background-color: hsl(179, 100%, 13%);
-}
-{
-  padding: 10px 0px 30px 0px;
-  line-height: 20px;
-  color: hsla(0, 0%, 100%, 0.75);
-}
-button {
-  border: none;
-  outline: none;
-  border-radius: 30px;
-}
-.box-1 button {
-  color: hsl(31, 77%, 52%);
-}
-.box-2 button {
-  color: hsl(184, 100%, 22%);
-}
-.box-3 button {
-  color: hsl(179, 100%, 13%);
-}
-button:hover {
-  background-color: hsla(0, 0%, 100%, 0.75);
-}
